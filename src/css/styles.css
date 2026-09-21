@@ -1,18 +1,96 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import 'izitoast/dist/css/iziToast.min.css';
+@import 'simplelightbox/dist/simple-lightbox.min.css';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.search-header {
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.form-input {
+  padding: 2px 4px;
+  border: 1px solid #808080;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.btn {
+  padding: 2px 8px;
+  border: 1px solid #808080;
+  border-radius: 3px;
+  background: #efefef;
+  color: #000;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e5e5e5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 8px;
+  list-style: none;
+}
+
+.gallery-item {
+  border: 1px solid #808080;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  height: auto;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.info b {
+  display: block;
+  font-weight: 600;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  font-size: 16px;
+}
+
+.loader.hidden {
+  display: none;
+}
