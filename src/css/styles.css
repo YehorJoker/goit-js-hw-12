@@ -87,10 +87,14 @@
   display: none;
 }
 
-.loader::after {
-  content: 'Loading images, please wait...';
+.loader {
+  display: none;
 }
 
-.loader.hidden {
-  display: none;
+.loader.is-visible {
+  display: inline-block;
+}
+
+.loader.is-visible::after {
+  content: 'Loading images, please wait...';
 }
