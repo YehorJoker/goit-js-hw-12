@@ -87,8 +87,8 @@
   display: none;
 }
 
-.loader {
-  font-size: 16px;
+.loader::after {
+  content: 'Loading images, please wait...';
 }
 
 .loader.hidden {
